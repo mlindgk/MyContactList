@@ -1,0 +1,5 @@
+com\contactlist\controllers\ContactsController.class
+com\contactlist\data\ContactNo.class
+com\contactlist\data\EmailAddress.class
+com\contactlist\data\Contact.class
+com\contactlist\ContactlistApplication.class

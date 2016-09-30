@@ -1,0 +1,55 @@
+
+<div class="tab-content" id="contactList" ng-show="!showContactsForm">
+	<div class="panel-heading">
+		<label>Contact List</label>
+		
+	</div>
+
+	<div class="col-md-8">
+		<div class="content">
+			<div class="tab-pane active" id="tab1">
+				<p>Contacts</p>
+			</div>
+			<div class="tab-pane" id="tab2">
+			<form class="form-inline" id="searchFrm">
+				<div class="form-group">
+				<span style="float: left">Search <input class="form-control"
+					id="focusedInput" type="text" ng-model="searchText.name"/></span> 
+				<span style="float: right">
+					<a href="#/contactForm" id="dashboard"><button class="btn btn-default">Add Contact</button></a>
+				</span>
+				</div>
+				</form>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Email Address</th>
+							<th>Contact No</th>
+						</tr>
+					</thead>
+					<tbody ng-repeat="contact in myData | filter:searchText">
+						<tr>
+							<td>{{ $index + 1 }}</td>
+							<td>{{contact.name = contact.firstName +" "+ contact.lastName}}</td>
+							<td>Work : {{contact.workEmail}}<br>
+								Personal : {{contact.personalEmail}}</td>
+							<td>Work : {{contact.workContactNo}}<br>
+								Personal : {{contact.personalContactNo}}</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="pagination" style="float: right">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+</div>
+

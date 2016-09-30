@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html ng-app="myModule">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title></title>
+
+<script type="text/javascript" src="scripts/vendor/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="scripts/vendor/angular.js"></script>
+<script type="text/javascript" src="scripts/vendor/angular-route.js"></script>
+
+<script type="text/javascript" src="css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="css/ng-grid/ng-grid-2.0.1.min.js"></script>
+
+<script type="text/javascript" src="scripts/app/app.js"></script>
+<script type="text/javascript" src="scripts/app/controllers.js"></script>x
+	
+<link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
+<link rel="stylesheet" href="css/ng-grid/ng-grid.css" />
+<link rel="stylesheet" href="css/myStyleSheet.css" />
+
+</head>
+<body>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+		<h3 class="panel-title">Logo</h3>
+	  </div>
+
+	<div id="content">
+		<div class="row">
+			<div class="col-md-1">
+				<ul class="nav nav-pills nav-stacked" style="background-color:darkgrey;">
+					<li role="presentation" class="active"><a href="#/" id="dashboard">Dashboard</a></li>
+					<li role="presentation"><a href="#/contacts" id="contacts">Contacts</a></li>
+					<!-- <li role="presentation"><a href="#/contactsForm" id="addContacts">Contacts</a></li> -->
+				</ul>
+			</div>
+		<div ng-view></div>
+		</div>
+	</div>
+	
+
+</body>
+
+</html>
